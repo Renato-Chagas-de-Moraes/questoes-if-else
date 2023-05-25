@@ -1,0 +1,62 @@
+<script>
+
+/*Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a
+valor do saque e depois informar quantas notas de cada valor serão fornecidas.
+As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de
+10 reais e o máximo de 600 reais. O script não deve se preocupar com a
+quantidade de notas existentes na máquina.*/
+
+const notasDisponiveis = [100, 50, 10, 5, 1];
+const valorMinimo = 10;
+const valorMaximo = 600;
+
+let valorSaque = parseInt(prompt("Digite o valor do saque (entre R$10 e R$600):"));
+
+if (valorSaque < valorMinimo || valorSaque > valorMaximo || valorSaque % 5 !== 0) {
+  console.log("Valor inválido. O valor do saque deve estar entre R$10 e R$600 e ser múltiplo de R$.");
+} 
+
+else {
+  let valorRestante = valorSaque;
+
+  let notas100 = Math.floor(valorRestante / 100);
+  valorRestante -= notas100 * 100;
+
+  let notas50 = Math.floor(valorRestante / 50);
+  valorRestante -= notas50 * 50;
+
+  let notas10 = Math.floor(valorRestante / 10);
+  valorRestante -= notas10 * 10;
+
+  let notas5 = Math.floor(valorRestante / 5);
+  valorRestante -= notas5 * 5;
+  let notas1 = valorRestante;
+
+  let notas = [];
+
+  if (notas100 > 0) {
+    alert(`${notas100} nota(s) de R$100`);
+  }
+
+  else if (notas50 > 0) {
+    alert(`${notas50} nota(s) de R$50`);
+  }
+
+  else if (notas10 > 0) {
+    alert(`${notas10} nota(s) de R$10`);
+  }
+
+  else if (notas5 > 0) {
+    alert(`${notas5} nota(s) de R$5`);
+  }
+
+  else if (notas1 > 0) {
+    alert(`${notas1} nota(s) de R$1`);
+  }
+
+  
+}
+
+
+
+</script>
