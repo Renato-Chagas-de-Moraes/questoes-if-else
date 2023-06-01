@@ -3,7 +3,7 @@
     const numero = Number(prompt(`me informe um numero`));
 
     if (numero >= 1000) {
-      console.log("O número deve ser menor que 1000.");
+      alert(`O número deve ser menor que 1000`);
     }
   
     let centenas = Math.floor(numero / 100);
@@ -11,9 +11,10 @@
     let unidades = numero % 10;
   
     if (centenas >=0 && unidades >= 0 && dezenas >= 0) {
-        alert(`voce tem ${unidades} unidades, ${dezenas} dezenas , ${centenas} centenas`);
+      alert(`voce tem ${unidades} unidades, ${dezenas} dezenas , ${centenas} centenas`);
     }
-    
-    
+    else{
+      alert(`valor invalido`)
+    }
   
   </script>
