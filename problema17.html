@@ -1,0 +1,21 @@
+<script>
+
+let valor = Number(prompt("Digite o valor: "));
+
+let aumento;
+
+if (valor <= 280) {
+    aumento = valor * 0.2;
+} else if (valor <= 700) {
+    aumento = valor * 0.15;
+} else if (valor <= 1500) {
+    aumento = valor * 0.1;
+} else {
+    aumento = valor * 0.05;
+}
+
+const novoValor = valor + aumento;
+
+alert(`O novo valor, após o aumento, é: R$ ${novoValor.toFixed(2)}`);
+
+</script>
