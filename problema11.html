@@ -1,31 +1,34 @@
+<meta charset="UTF-8" />
+
 <script>
-litros_vendidos = Number(prompt("Digite o número de litros vendidos: "));
-tipo_combustivel = Number("Digite o tipo de combustível (A-álcool, G-gasolina): ");
+  const Lc = Number(prompt("Digite o número de litros vendidos: "));
+  const Tc = Number("Digite o tipo de combustível (A-álcool, G-gasolina): ");
 
-preco_alcool = 6.10
-preco_gasolina = 6.50
+  let Pa = 6.10
+  let Pg= 6.50
 
+  let Vp;
 
-if (tipo_combustivel == "A" || tipo_combustivel == "a"){
-    if (litros_vendidos <= 20){
-        valor_pago = litros_vendidos * (preco_alcool - (preco_alcool * 0.03))
-    }
-    else{
-        valor_pago = litros_vendidos * (preco_alcool - (preco_alcool * 0.05))
-    }
-}
-    else if( tipo_combustivel == "G" || tipo_combustivel == "g"){
-    if (litros_vendidos <= 20)
-        valor_pago = litros_vendidos * (preco_gasolina - (preco_gasolina * 0.04))
-    else{
-        valor_pago = litros_vendidos * (preco_gasolina - (preco_gasolina * 0.06))
-    }
-}
-else{}
-    valor_pago = 0
-    print("Tipo de combustível inválido!")
+  if (Tc == "A" || Tc == "a"){
+      if (litros_vendidos <= 20){
+       Vp = Lc * (Pa - (Pa * 0.03))
+      }
+      else{
+       Vp = Lc * (Pa - (Pa * 0.05))
+      }
+  }
+      else if( Tc == "G" || Tc == "g"){
+      if (litros_vendidos <= 20)
+          Vp = Lc * (Pg- (Pg* 0.04))
+      else{
+          Vp = Lc * (Pg- (Pg* 0.06))
+      }
+  }
+  else{}
+      Vp = 0
+      alert("Tipo de combustível inválido!")
 
-if(valor_pago > 0){
-    print("Valor a ser pago: R$", valor_pago)
-}
+  if(Vp > 0){
+      alert('Valor a ser pago: R$ ${Vp}')
+  }
 </script>

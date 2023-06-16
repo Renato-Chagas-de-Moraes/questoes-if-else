@@ -1,20 +1,22 @@
+<meta charset="UTF-8" />
+
+/
 <script>
+  const numero = Number(prompt(`me informe um numero`));
 
-    const numero = Number(prompt(`me informe um numero`));
+  if (numero <= 1000) {
+    alert(`O número deve ser menor que 1000`);
+  }
 
-    if (numero >= 1000) {
-      alert(`O número deve ser menor que 1000`);
-    }
-  
-    let centenas = Math.floor(numero / 100);
-    let dezenas = Math.floor((numero % 100) / 10);
-    let unidades = numero % 10;
-  
-    if (centenas >=0 && unidades >= 0 && dezenas >= 0) {
-      alert(`voce tem ${unidades} unidades, ${dezenas} dezenas , ${centenas} centenas`);
-    }
-    else{
-      alert(`valor invalido`)
-    }
-  
-  </script>
+  let centenas = Math.floor(numero / 100);
+  let dezenas = Math.floor((numero % 100) / 10);
+  let unidades = numero % 10;
+
+  if (centenas >= 0 && unidades >= 0 && dezenas >= 0) {
+    alert(
+      `voce tem ${unidades} unidades, ${dezenas} dezenas , ${centenas} centenas`
+    );
+  } else {
+    alert(`valor invalido`);
+  }
+</script>

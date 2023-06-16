@@ -1,5 +1,35 @@
+<meta charset="UTF-8" />    
 <script>
 
+let hemisferio = prompt("Em qual hemisfério você está? (norte/sul): ");
+let Ma = Number(prompt("Qual é o mês atual? (digite um número de 1 a 12): "));
 
+if (hemisferio.toLowerCase() === "norte") {
+  if (Ma === "12" || Ma === "1" || Ma === "2") {
+    alert('inverno');
+  } else if (Ma === "3" || Ma === "4" || Ma === "5") {
+    alert('primavera');
+  } else if (Ma === "6" || Ma === "7" || Ma === "8") {
+    alert('verao');
+  } else if (Ma === "9" || Ma === "10" || Ma === "11") {
+    alert('outono');
+  } else {
+    alert('mes invalido');
+  }
+} else if (hemisferio.toLowerCase() === "sul") {
+  if (Ma === "12" || Ma === "1" || Ma === "2") {
+    alert('verao');
+  } else if (Ma === "3" || Ma === "4" || Ma === "5") {
+    alert('outono');
+  } else if (Ma === "6" || Ma === "7" || Ma === "8") {
+    alert('inverno');
+  } else if (Ma === "9" || Ma === "10" || Ma === "11") {
+    alert('primavera');
+  } else {
+    alert('mes invalido');
+  }
+} else {
+  alert('hemisferio invalido');
+}
     
 </script>

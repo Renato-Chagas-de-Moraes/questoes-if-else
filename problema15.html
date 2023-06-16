@@ -1,14 +1,13 @@
+<meta charset="UTF-8" />
+
 <script>
+  const num = Number(prompt("Digite um número: "));
 
-numero = Number(prompt("Digite um número: ")) 
+  const numArredondado = round(num);
 
-const NumeroArredondado = round(numero)
-
-if (numero == NumeroArredondado){
-    Alert('O número é inteiro.')
-}
-else{
-    Alert('O número é decimal.')
-}
-
+  if (num == NumArredondado) {
+    Alert("O número é inteiro.");
+  } else {
+    Alert("O número é decimal.");
+  }
 </script>
