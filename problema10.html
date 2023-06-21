@@ -1,21 +1,10 @@
 <script>
-  const pergunta = prompt(`Telefonou para a vítima? (Responda com S ou N)`)
-    .trim()
-    .toLowerCase();
-  const pergunta2 = prompt(`Esteve no local do crime? (Responda com S ou N)`)
-    .trim()
-    .toLowerCase();
-  const pergunta3 = prompt(`Mora perto da vítima? (Responda com S ou N)`)
-    .trim()
-    .toLowerCase();
-  const pergunta4 = prompt(`Devia para a vítima? (Responda com S ou N)`)
-    .trim()
-    .toLowerCase();
-  const pergunta5 = prompt(`Já trabalhou com a vítima? (Responda com S ou N)`)
-    .trim()
-    .toLowerCase();
+  const pergunta = prompt(`Telefonou para a vítima? (Responda com S ou N)`).trim().toLowerCase();
+  const pergunta2 = prompt(`Esteve no local do crime? (Responda com S ou N)`).trim().toLowerCase();
+  const pergunta3 = prompt(`Mora perto da vítima? (Responda com S ou N)`).trim().toLowerCase();
+  const pergunta4 = prompt(`Devia para a vítima? (Responda com S ou N)`).trim().toLowerCase();
+  const pergunta5 = prompt(`Já trabalhou com a vítima? (Responda com S ou N)`).trim().toLowerCase();
 
-  //PROCESSAMENTO
   let resposta = 0;
   if (pergunta == "s") {
     resposta++;

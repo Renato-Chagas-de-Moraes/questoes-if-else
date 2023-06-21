@@ -1,8 +1,8 @@
 <meta charset="UTF-8" />
 
 <script>
-  const Lc = Number(prompt("Digite o número de litros vendidos: "));
-  const Tc = Number("Digite o tipo de combustível (A-álcool, G-gasolina): ");
+  const Lc = Number(prompt(`Digite o número de litros vendidos: `));
+  const Tc = Number(`Digite o tipo de combustível (A-álcool, G-gasolina): `);
 
   let Pa = 6.10
   let Pg= 6.50
@@ -24,9 +24,10 @@
           Vp = Lc * (Pg- (Pg* 0.06))
       }
   }
-  else{}
+  else{
       Vp = 0
-      alert("Tipo de combustível inválido!")
+      alert(`Tipo de combustível inválido!"`);
+}
 
   if(Vp > 0){
       alert('Valor a ser pago: R$ ${Vp}')

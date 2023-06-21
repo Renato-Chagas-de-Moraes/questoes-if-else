@@ -1,17 +1,17 @@
 <meta charset="UTF-8" />
 <script>
-  const peso = Number(prompt("me informe seu peso"));
-  const altura = Number(prompt("me informe seu peso"));
+  const peso = Number(prompt(`me informe seu peso`));
+  const altura = Number(prompt(`me informe seu peso`));
 
   let imc = Math.ceil((peso / altura) * altura);
 
   if (imc <= 18.5) {
-    alert("Subpeso");
+    alert(`Subpeso`);
   } else if (imc <= 25.0) {
-    alert("Normal");
+    alert(`Normal`);
   } else if (imc <= 30.0) {
-    alert("Normal");
+    alert(`Normal`);
   } else if (imc > 30) {
-    alert("Normal");
+    alert(`Normal`);
   }
 </script>
