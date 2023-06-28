@@ -1,11 +1,10 @@
-<meta charset="UTF-8" />
-
 <script>
-  const numero = Number(prompt(`Informe um número inteiro`));
 
-  if (numero % 2 === 0) {
-    alert(`é um número par`);
-  } else {
-    alert(' é um número impar');
-  }
+    let preçoP = Number(prompt(`Informe o preço do produto`).trim());
+
+    let MensagemFinal = (preçoP <= 280)? `o preço agora do produto sera ${preçoP*1.20}`
+    :(preçoP <= 700)? `o preço agora do produto sera ${preçoP*1.15}`
+    :(preçoP <= 1500)? `o preço agora do produto sera ${preçoP*1.10}`
+    :`o preço do produto agora sera ${preçoP*1.05}`
+
 </script>

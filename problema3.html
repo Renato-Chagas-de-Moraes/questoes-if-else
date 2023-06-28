@@ -1,18 +1,9 @@
 <script>
 
-  const turno = prompt(`informe o turno que você estuda ( responda V para vespertino, M para matutino ou N para noturno`).toUpperCase();
+const n1 = parseInt(prompt(`me informe um numero`).trim());
+const n2 = parseInt(prompt(`me informe um numero`).trim());
 
-  if (turno === "V") {
-    alert(`Boa tarde!`);
-  } 
-  else if (turno === "M") {
-    alert(`Bom dia!`);
-  } 
-  else if (turno === "N") {
-    alert(`Boa noite!`);
-  } 
-  else {
-    alert(`opção inválida`);
-  }
-  //SAÍDA
+let MensagemFinal = (n1 < n2) ? `${n2} maio que ${n1}`
+:`${n1} maior que ${n2}`
+
 </script>

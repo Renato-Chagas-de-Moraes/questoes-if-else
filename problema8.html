@@ -1,22 +1,9 @@
-<meta charset="UTF-8" />
-
 <script>
-  const lado1 = Number(prompt(`Digite o valor do primeiro lado:`));
-  const lado2 = Number(prompt(`Digite o valor do segundo lado:`));
-  const lado3 = Number(prompt(`Digite o valor do terceiro lado:`));
 
-  if (lado1 + lado2 > lado3 && lado2 + lado3 > lado1 && lado1 + lado3 > lado2) {
-    if (lado1 === lado2 && lado2 === lado3) {
-      console.log(`O triângulo é equilátero.`);
-    } 
-    else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
-      console.log(`O triângulo é isósceles.`);
-    } 
-    else {
-      console.log(`O triângulo é escaleno.`);
-    }
-  } 
-  else {
-    alert(`Os valores informados não formam um triângulo.`);
-  }
+     // Faça um script que peça para o usuário informar o preço do litro do combustível e a quantidade de litros utilizados para se deslocar para o trabalho diariamente.
+    // Peça também ao programa para o usuário informar o preço do transporte público que deverá pagar para se deslocar ao trabalho diariamente.
+    // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
+
+    const PL = Number(prompt(`Me informe o preço do litro da gasosa`).trim());
+
 </script>

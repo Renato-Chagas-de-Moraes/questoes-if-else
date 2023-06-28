@@ -1,22 +1,18 @@
-<meta charset="UTF-8" />
-
-/
 <script>
-  const numero = Number(prompt(`me informe um numero`));
 
-  if (numero <= 1000) {
-    alert(`O número deve ser menor que 1000`);
-  }
+ //É sabido que os caẽs amadurecem mais rapidamente do que os seres humanos (na verdade, alguns seres humanos parecem nunca amadurecer).
+    // Calcule a idade do seu cão, baseada nos seguintes fatores:
+    // - cães de porte pequeno: fator 5
+    // - cães de porte médio: fator 6
+    // - cães grandes: fator 7.
 
-  let centenas = Math.floor(numero / 100);
-  let dezenas = Math.floor((numero % 100) / 10);
-  let unidades = numero % 10;
+    const porte = (prompt(`me informe o porte do seu cao (M-medio, P-pequeno, G-grande)`).trim().toUpperCase());
+    const idadeC = parseInt(prompt(`idade do seu cao`));
 
-  if (centenas >= 0 && unidades >= 0 && dezenas >= 0) {
-    alert(
-      `voce tem ${unidades} unidades, ${dezenas} dezenas , ${centenas} centenas`);
-  } 
-  else {
-    alert(`valor invalido`);
-  }
+    let MensagemFinal = (porte == "P" ) ? `a idade do seu cao para ele é ${porte*5}`
+    :(porte == "M") ? `a idade do seu cao para ele é ${porte*6}`
+    :`a idade do seu cao para ele é${porte*7}`
+
+
+
 </script>
