@@ -2,10 +2,10 @@
 
     let preçoP = Number(prompt(`Informe o preço do produto`).trim());
 
-    let MensagemFinal = (preçoP <= 280)? `o preço agora do produto sera ${preçoP*1.20}`
-    :(preçoP <= 700)? `o preço agora do produto sera ${preçoP*1.15}`
-    :(preçoP <= 1500)? `o preço agora do produto sera ${preçoP*1.10}`
-    :`o preço do produto agora sera ${preçoP*1.05}`
+    let MensagemFinal = (preçoP <= 280)? `o preço agora do produto sera ${(preçoP*1.20)}`
+    :(preçoP <= 700)? `o preço agora do produto sera ${(preçoP*1.15).toFixed(2).replace(".",",")}`
+    :(preçoP <= 1500)? `o preço agora do produto sera ${(preçoP*1.10).toFixed(2).replace(".",",")}`
+    :`o preço do produto agora sera ${(preçoP*1.05).toFixed(2).replace(".",",") }`
 
     alert(MensagemFinal)
 

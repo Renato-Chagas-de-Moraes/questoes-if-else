@@ -2,7 +2,7 @@
 
 let IdEleitor = parseInt(prompt(`informe o ano em que voce nasceu`).trim());
 const dataAtual = new Date().getFullYear();
-const anos = IdEleitor - dataAtual;
+const anos = dataAtual - IdEleitor ;
 
 let MensagemFinal = (anos > 15)?`Voce pode votar`
 :`voce nao pode votar`
