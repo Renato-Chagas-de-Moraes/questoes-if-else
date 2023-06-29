@@ -1,0 +1,11 @@
+<script>
+    
+    const HT = parseInt(prompt(`quanto voce recebe por hora?`).trim());
+    const RHT = parseInt(prompt(`quantas horas voce trabalha semanalmente?`).trim());
+    
+    let MensagemFinal = ( RTH <= 45)?`nao havera adicional`
+    :(RTH <= 60)?`seu novo salario semanal sera de ${RTH*HT*1.20}`
+    :`seu novo salario semanal sera de ${RTH*HT*1.30}`
+
+    alert(MensagemFinal `, e voce recebe ${RHT/HT} por hora`)
+</script>
